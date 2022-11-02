@@ -1,0 +1,250 @@
+*{
+    /*lo utilizamos para el responsive,
+    seria la suma del ancho y relleno de los elementos*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+h2{
+  text-align: center;
+}
+html
+{
+    /*ña pagina se mueve de forma lenta al bajar*/
+    scroll-behavior: smooth;
+}
+
+.header-titulo img{
+    width: 100px; 
+    height: 60px; 
+    margin-right: 1000px;
+}
+header .header-contenido{
+  background-color: #ffffff;
+  
+    display: flex; /*contenido flexible*/
+    flex-direction: column; /*contenido en columnas*/
+    align-items: center; /*centreamos los elementos*/
+}
+.header-contenido{
+    margin: auto;
+    max-width: 1400px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/* Menu */
+#menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+ }
+#menu img{
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  position: relative;
+
+}
+ /* items del menu */
+ 
+ #menu ul li {
+  background-color:#ffffff;
+ }
+ 
+ /* enlaces del menu */
+ 
+ #menu ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  z-index: 2;
+ }
+ 
+ /* items del menu */
+ 
+ #menu ul li {
+  float:left;
+  margin:0;
+  padding:0;
+  z-index: 2;
+ }
+ 
+ /* efecto al pasar el ratón por los items del menu */
+ #menu ul li a:hover {
+  background:rgb(184, 181, 181);
+ }
+ /* menu desplegable */
+
+#menu ul ul {
+  display:none;
+  top:100%;
+  left:0;
+  padding:0;
+  position: relative;
+
+ }
+ 
+ /* items del menu desplegable */
+ 
+ #menu ul ul li {
+  float:none;
+  width:150px;
+  position:relative;
+  margin-left: 1200px;
+  animation: 3s ;
+ }
+ 
+ /* enlaces de los items del menu desplegable */
+ #menu ul ul a {
+  color: black;
+ }
+ /* items del menu desplegable al pasar el ratón */
+ 
+ #menu ul li:hover > ul {
+  position: absolute;
+  display: grid;
+  z-index: 2;
+ }
+/* Menu para arriba */
+@media(min-width:850px){
+    header{
+        /* pantalla por defecto, posicionado en la parte superior */
+        position: relative; 
+        width: 100%;
+    }
+    header .header-contenido{
+        flex-direction: row; 
+        justify-content:space-between;
+    }
+}
+
+
+.pie-pagina {
+    width: 100%;
+    background-color: #24252A;
+  }
+.pie-pagina .grupo {
+  
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  
+  }
+  
+.pie-pagina .grupo .caja figure {
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+.pie-pagina .grupo .caja figure img {
+  
+    width: 250px;
+  
+  }
+  
+.pie-pagina .grupo .caja h3 {
+  
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  
+  }
+  
+.pie-pagina .grupo .caja p {
+  
+    color: #efeefe;
+    margin-bottom: 10px;
+  
+  }
+  
+.pie-pagina .grupo .red-social a {
+  
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #efeefe;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 8px;
+  
+  } 
+.pie-pagina .grupo .red-social .fa-facebook{
+    background-image: url("../imagenes/pngegg\ \(16\).png");
+    background-size: 50px;
+    background-position: center;
+  }
+.pie-pagina .grupo .red-social .fa-instagram{
+    background-image: url("../imagenes/pngegg\ \(18\).png");
+    background-size: 55px;
+    background-position: center;
+  }
+
+  .pie-pagina .grupo .red-social .fa-twitter{
+    background-image: url("../imagenes/pngegg\ \(19\).png");
+    background-size: 55px;
+    background-position: center;
+  }
+
+
+.pie-pagina .grupo .red-social a:hover {
+  
+    color: #2FEF1E;
+    transform: scale(1.10);
+  
+}
+  
+.pie-pagina .grupo2 {
+  
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  
+}
+  
+.container {
+  
+    border: solid 1px rgba(255, 255, 255, 0.2);
+  
+}
+  
+.contenedor {
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .contenedor button {
+  
+    transition: all 0.3s ease 0s;
+  
+  }
